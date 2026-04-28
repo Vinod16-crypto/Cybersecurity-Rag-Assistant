@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity RAG Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1>SecureAI: Cybersecurity RAG Assistant</h1>
+            <p>An AI-powered web application that answers cybersecurity questions using Retrieval-Augmented Generation, vector search, and a large language model.</p>
+        </section>
+
+        <section class="app-grid">
+            <aside class="card sidebar-card">
+                <span class="badge">Powered by RAG</span>
+                <h2>Project Overview</h2>
+                <p>This assistant retrieves relevant cybersecurity knowledge first, then uses an LLM to generate a grounded answer.</p>
+
+                <ul class="tech-list">
+                    <li>Flask backend</li>
+                    <li>HTML, CSS, JavaScript frontend</li>
+                    <li>ChromaDB vector database</li>
+                    <li>HuggingFace embeddings</li>
+                    <li>Groq LLM</li>
+                </ul>
+            </aside>
+
+            <section>
+                <div class="card">
+                    <h2>Ask the Assistant</h2>
+
+                    <div class="example-buttons">
+                        <button type="button" onclick="setQuestion('What is phishing?')">Phishing</button>
+                        <button type="button" onclick="setQuestion('What should I do if I receive a suspicious email?')">Suspicious Email</button>
+                        <button type="button" onclick="setQuestion('Explain malware in simple terms.')">Malware</button>
+                        <button type="button" onclick="setQuestion('What is intrusion detection?')">Intrusion Detection</button>
+                    </div>
+
+                    <form id="askForm">
+                        <textarea id="question" placeholder="Ask a cybersecurity question..."></textarea>
+                        <button type="submit">Ask Assistant</button>
+                    </form>
+
+                    <div id="chatBox" class="chat-box"></div>
+                    <p class="source-note">Answers are generated using retrieved cybersecurity knowledge from the app’s knowledge base.</p>
+                </div>
+
+                <div class="card muted">
+                    <h2>Future ML Module</h2>
+                    <p>Next upgrade: train an intrusion detection model using cybersecurity traffic data, save it with Joblib, and connect it to this web app.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
