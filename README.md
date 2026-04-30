@@ -100,10 +100,10 @@ Open in browser:
 ## 📸 Screenshots
 
 ### Chat Interface
-![Chat](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot.pdf)
+![Chat](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot.png)
 
 ### Example Answer
-![Answer](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot%20II.pdf)
+![Answer](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot%20II.png)
 
 ---
 
