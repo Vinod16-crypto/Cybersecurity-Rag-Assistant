@@ -1,30 +1,37 @@
 # 🔐 SecureAI: Cybersecurity RAG Assistant
 
-An AI-powered web application that answers cybersecurity questions using Retrieval-Augmented Generation (RAG) with real-world security documents like CISA, NIST, and OWASP.
+An AI-powered web application that answers cybersecurity questions using Retrieval-Augmented Generation (RAG) with real-world documents from CISA, NIST, and OWASP.
 
 ---
 
-## 🚀 What This Project Does
+## 🚀 Project Overview
 
-You can ask cybersecurity questions like:
-- "What is phishing?"
-- "What should I do if I receive a suspicious email?"
-- "What is the NIST framework?"
+SecureAI is a chatbot-style assistant that helps users understand cybersecurity concepts using trusted sources.
 
-The system:
-1. Searches relevant information from PDF documents
-2. Sends that context to an AI model
-3. Generates a safe and accurate answer
+Instead of guessing answers, the system:
+- Retrieves relevant content from PDF documents
+- Uses that context to generate accurate responses
+- Avoids answering outside its knowledge scope
 
 ---
 
 ## 🧠 Key Features
 
-- 💬 Chat-style interface
-- 📄 Uses real cybersecurity PDFs
-- 🔍 Context-based answers (RAG)
-- 🧠 AI responses using Groq (LLaMA 3)
-- ⚠️ Handles unrelated questions safely
+- 💬 Chat-style web interface (Flask)
+- 📄 Real document-based answers (PDF RAG)
+- 🔍 Context retrieval using embeddings
+- 🧠 LLM integration (Groq - LLaMA 3)
+- ⚠️ Safe fallback for out-of-scope questions
+- ⚡ Fast and lightweight architecture
+
+---
+
+## ⚙️ How It Works
+
+1. User enters a question  
+2. System searches relevant text from PDFs  
+3. Context is passed to the LLM  
+4. LLM generates a grounded answer  
 
 ---
 
@@ -36,7 +43,7 @@ The system:
 
 **AI / RAG**
 - LangChain
-- ChromaDB
+- ChromaDB (Vector Database)
 - HuggingFace Embeddings
 - Groq API (LLaMA 3)
 
@@ -49,13 +56,11 @@ The system:
 
 ## 📂 Project Structure
 
-
 ---
 
-## ⚙️ How to Run This Project
+## ⚙️ Setup Instructions
 
-### 1. Clone the repository
-
+### 1. Clone repository
 
 ---
 
@@ -63,13 +68,13 @@ The system:
 
 ---
 
-### 3. Add your API key
+### 3. Add API Key
 
-Create a file called `.env` and add:
+Create a `.env` file:
 
 ---
 
-### 4. Run the application
+### 4. Run the app
 
 Open in browser:
 
@@ -78,32 +83,33 @@ Open in browser:
 ## 💡 Example Questions
 
 - What is phishing?
-- What is malware?
-- What is red teaming?
+- What is the NIST Cybersecurity Framework?
 - What should I do if I receive a suspicious email?
+- What is malware?
 
 ---
 
 ## ⚠️ Limitations
 
-- Answers only based on provided documents
-- Not real-time cybersecurity data
-- Limited knowledge scope
+- Answers only from provided documents
+- No real-time cybersecurity updates
+- Limited to knowledge base scope
 
 ---
 
 ## 📸 Screenshots
 
-(Add your screenshots here later)
+![App Screenshot](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot.pdf)
+https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot%20II.pdf
 
 ---
 
 ## 📌 Future Improvements
 
-- Deploy to cloud (Render / AWS)
-- Improve UI design
-- Add more cybersecurity documents
-- Add user login system
+- Cloud deployment (Render / AWS)
+- Chat history support
+- More cybersecurity datasets
+- User authentication
 
 ---
 
@@ -116,4 +122,4 @@ Aspiring Data Scientist / AI Engineer
 
 ## ⭐ Support
 
-If you like this project, give it a star ⭐
+If you found this project useful, consider giving it a star ⭐
