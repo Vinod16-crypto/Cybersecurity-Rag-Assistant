@@ -1,66 +1,119 @@
-# Cybersecurity RAG Assistant
+# 🔐 SecureAI: Cybersecurity RAG Assistant
 
-A Flask web application that converts the notebook-based Cybersecurity Multi-Agent RAG idea into a portfolio-ready app.
+An AI-powered web application that answers cybersecurity questions using Retrieval-Augmented Generation (RAG) with real-world security documents like CISA, NIST, and OWASP.
 
-## What it shows
+---
 
-- Flask web app with HTML, CSS, and JavaScript
-- RAG pipeline using ChromaDB + HuggingFace embeddings
-- Optional OpenAI LLM response generation
-- Optional ML intrusion detection model trained from CSV
-- Ready for Render deployment
+## 🚀 What This Project Does
 
-## Recommended dataset
+You can ask cybersecurity questions like:
+- "What is phishing?"
+- "What should I do if I receive a suspicious email?"
+- "What is the NIST framework?"
 
-Use **UNSW-NB15** first because it is smaller and easier for training than full CICIDS2017. Use CICIDS2017 if you want a stronger but heavier project.
+The system:
+1. Searches relevant information from PDF documents
+2. Sends that context to an AI model
+3. Generates a safe and accurate answer
 
-## Run locally
+---
 
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env
-# add your OPENAI_API_KEY in .env
-python app.py
-```
+## 🧠 Key Features
 
-Open: http://127.0.0.1:5000
+- 💬 Chat-style interface
+- 📄 Uses real cybersecurity PDFs
+- 🔍 Context-based answers (RAG)
+- 🧠 AI responses using Groq (LLaMA 3)
+- ⚠️ Handles unrelated questions safely
 
-## Train ML model
+---
 
-```bash
-python ml/train_model.py --csv data/your_intrusion_dataset.csv
-```
+## 🏗️ Tech Stack
 
-This saves:
+**Backend**
+- Python
+- Flask
 
-```text
-models/intrusion_model.joblib
-```
+**AI / RAG**
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings
+- Groq API (LLaMA 3)
 
-## Deploy on Render
+**Frontend**
+- HTML
+- CSS
+- JavaScript
 
-1. Push this folder to GitHub.
-2. Create a new Render Web Service.
-3. Build command:
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 📂 Project Structure
 
-4. Start command:
 
-```bash
-gunicorn app:app
-```
+---
 
-5. Add environment variable:
+## ⚙️ How to Run This Project
 
-```text
-OPENAI_API_KEY=your_key
-```
+### 1. Clone the repository
 
-## Project story for resume
 
-Built an AI-powered cybersecurity assistant using Retrieval-Augmented Generation to answer threat, compliance, and incident-response questions from a cybersecurity knowledge base. Added an optional machine learning module for intrusion detection using network traffic datasets.
+---
+
+### 2. Install dependencies
+
+---
+
+### 3. Add your API key
+
+Create a file called `.env` and add:
+
+---
+
+### 4. Run the application
+
+Open in browser:
+
+---
+
+## 💡 Example Questions
+
+- What is phishing?
+- What is malware?
+- What is red teaming?
+- What should I do if I receive a suspicious email?
+
+---
+
+## ⚠️ Limitations
+
+- Answers only based on provided documents
+- Not real-time cybersecurity data
+- Limited knowledge scope
+
+---
+
+## 📸 Screenshots
+
+(Add your screenshots here later)
+
+---
+
+## 📌 Future Improvements
+
+- Deploy to cloud (Render / AWS)
+- Improve UI design
+- Add more cybersecurity documents
+- Add user login system
+
+---
+
+## 👨‍💻 Author
+
+Vinod  
+Aspiring Data Scientist / AI Engineer
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐
