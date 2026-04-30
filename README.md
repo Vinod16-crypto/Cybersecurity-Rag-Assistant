@@ -1,6 +1,6 @@
 # 🔐 SecureAI: Cybersecurity RAG Assistant
 
-An AI-powered web application that answers cybersecurity questions using Retrieval-Augmented Generation (RAG) with real-world documents from CISA, NIST, and OWASP.
+AI-powered cybersecurity assistant built using Retrieval-Augmented Generation (RAG) with real-world security documents.
 
 ---
 
@@ -23,6 +23,17 @@ Instead of guessing answers, the system:
 - 🧠 LLM integration (Groq - LLaMA 3)
 - ⚠️ Safe fallback for out-of-scope questions
 - ⚡ Fast and lightweight architecture
+
+---
+
+## 🎯 Key Skills Demonstrated
+
+- Retrieval-Augmented Generation (RAG)
+- LLM Integration (Groq API)
+- Vector Databases (ChromaDB)
+- Backend Development (Flask)
+- Frontend Integration (HTML/CSS/JS)
+- API Handling & Error Management
 
 ---
 
@@ -119,7 +130,7 @@ Open in browser:
 ## 👨‍💻 Author
 
 Vinod  
-Aspiring Data Scientist / AI Engineer
+Aspiring Data Scientist | AI Engineer
 
 ---
 
