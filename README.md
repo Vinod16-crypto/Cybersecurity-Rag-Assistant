@@ -99,8 +99,11 @@ Open in browser:
 
 ## 📸 Screenshots
 
-![App Screenshot](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot.pdf)
-https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot%20II.pdf
+### Chat Interface
+![Chat](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot.pdf)
+
+### Example Answer
+![Answer](https://github.com/Vinod16-crypto/Cybersecurity-Rag-Assistant/blob/main/RAG%20Screenshot%20II.pdf)
 
 ---
 
